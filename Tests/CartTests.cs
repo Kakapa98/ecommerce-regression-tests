@@ -27,7 +27,7 @@ public class CartTests : TestBase
     public async Task ViewCart_ShouldShowCartPage()
     {
         await _productsPage.ClickCartAsync();
-        var  = await _cartPage.GetCurrentUrlAsync();
+        var url = await _cartPage.GetCurrentUrlAsync();
         Assert.That(url, Does.Contain(TestConstants.CartPageUrl));
     }
 
